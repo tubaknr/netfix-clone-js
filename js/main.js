@@ -1,0 +1,1 @@
+// <p class="hide-sm"></p> HIDE-SM: EKRAN KÜÇÜKKEN GÖSTERME!

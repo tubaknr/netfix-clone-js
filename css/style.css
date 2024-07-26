@@ -1,5 +1,6 @@
 :root{
     --primary-color: #e50914;
+    --dark-color: #141414;
 }
 
 *{
@@ -54,7 +55,8 @@ img{
     height: 100%;
     z-index: 1;
     background: rgba(0,0,0,0.6);
-    box-shadow: inset 120px 100px 250px #000000 inset -120px -100px 250px #000000;
+    box-shadow: inset 120px 100px 250px #000000;
+    box-shadow: inset -120px -100px 250px #000000; 
 }
 
 .showcase-content{
@@ -69,8 +71,8 @@ img{
 }
 
 .showcase-content h1{
-    font-weight: 700;
-    font-size: 5.2rem;
+    font-weight: 600;
+    font-size: 5rem;
     line-height: 1.1;
     margin: 0 0 2rem;
 }
@@ -91,7 +93,7 @@ img{
 }
 
 .showcase-top img{
-    width: 170px;
+    width: 150px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -105,6 +107,83 @@ img{
     transform: translate(-50%, -50%);
 }
 
+/* TABS */
+.tabs{
+    background: var(--dark-color);
+    padding-top: 1rem;
+    border-bottom: 3px solid #3d3d3d;
+}
+
+.tabs .container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;   
+}
+
+#tab-1-content .tab-1-content-inner{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container{
+    max-width: 70%;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 2rem;
+}
+
+.tabs p{
+    font-size: 1.2rem;
+    padding-top: 0.5rem;
+}
+
+.tabs .container > div{
+    padding: 1.5rem;
+}
+
+.tabs .container > div:hover{
+    cursor: pointer;
+    color: #fff;
+}
+
+.tab-border{
+    border-bottom: var(--primary-color) 4px solid;
+}
+
+.tab-1-content .tab-1-content-inner{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-xl{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.text-lg{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+ 
+.text-center{
+    text-align: center;
+}
+
+.text-dark{
+    color: #999;
+}
+
+/* BUTTONS */
 .btn{
     display: inline-block;
     background: var(--primary-color);
@@ -136,7 +215,7 @@ img{
     text-transform: uppercase;
 }
 
-
+/* */
 
 
 
